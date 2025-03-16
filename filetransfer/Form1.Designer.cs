@@ -40,6 +40,8 @@
             label4 = new Label();
             btnStartListening = new Button();
             btnStopListening = new Button();
+            label5 = new Label();
+            inputPort = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -50,7 +52,6 @@
             label1.Size = new Size(67, 15);
             label1.TabIndex = 0;
             label1.Text = "Receiver IP:";
-
             // 
             // txtIP
             // 
@@ -144,11 +145,29 @@
             btnStopListening.UseVisualStyleBackColor = true;
             btnStopListening.Click += button1_Click_2;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(12, 129);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 15);
+            label5.TabIndex = 15;
+            label5.Text = "Input Port:";
+            // 
+            // inputPort
+            // 
+            inputPort.Location = new Point(85, 129);
+            inputPort.Name = "inputPort";
+            inputPort.Size = new Size(100, 23);
+            inputPort.TabIndex = 16;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(inputPort);
+            Controls.Add(label5);
             Controls.Add(btnStopListening);
             Controls.Add(btnStartListening);
             Controls.Add(label4);
@@ -185,5 +204,7 @@
         private Label label4;
         private Button btnStartListening;
         private Button btnStopListening;
+        private Label label5;
+        private TextBox inputPort;
     }
 }

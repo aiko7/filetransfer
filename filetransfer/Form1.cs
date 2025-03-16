@@ -26,10 +26,16 @@ namespace filetransfer
         private void button1_Click_1(object sender, EventArgs e)
         {
             //START LISTENING
+            btnStartListening.Enabled = false;
+            btnStopListening.Enabled = true;
+
         }
         private void button1_Click_2(object sender, EventArgs e)
         {
             //STOP LISTENING
+            btnStartListening.Enabled = true;
+            btnStopListening.Enabled = false;
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
